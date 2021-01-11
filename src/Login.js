@@ -1,5 +1,6 @@
 import React, {useContext, useState} from 'react'
 import { appContext } from './appContext';
+import {Form, Button} from './Style'
 
 export const Login = props => {
     const {setUser} = useContext(appContext)
@@ -55,14 +56,16 @@ export const Login = props => {
     }
 
     return(
-            <form onSubmit={submithandler}>
-                <input onChange={changeUsername} value={username}>
-                </input>
-                <input type="password" onChange={changePassword} value={password}>
-                </input>
-                <button type="submit">Login</button>
-                <button onClick={createUser}>Create</button>
-                <p>{error}</p>
-            </form>
+            <Form onSubmit={submithandler}>
+                <label>Username:</label>
+                <input onChange={changeUsername} value={username}></input>
+                {/* <br/> */}
+                <label>Password:</label>
+                <input type="password" onChange={changePassword} value={password}></input>
+                {/* <br/> */}
+                <Button primary type="submit">Login</Button>
+                <Button primary onClick={createUser}>Create</Button>
+                {/* <p>{error}</p> */}
+            </Form>
     )
 }

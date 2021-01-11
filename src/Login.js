@@ -1,5 +1,6 @@
 import React, {useContext, useState} from 'react'
 import { appContext } from './appContext';
+import {GoogleLoginComponent}from './GoogleLogin';
 
 export const Login = props => {
     const {setUser} = useContext(appContext)
@@ -62,6 +63,7 @@ export const Login = props => {
                 </input>
                 <button type="submit">Login</button>
                 <button onClick={createUser}>Create</button>
+                <GoogleLoginComponent/>
                 <p>{error}</p>
             </form>
     )

@@ -14,6 +14,22 @@ export const Container = styled.div`
     min-height: 22vh;
     min-width: 120px;
 `
+export const Container2 = styled.div`
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid lightblue; */
+    /* border-radius: 3px; */
+    box-sizing: content-box;
+    width: 16vw;
+    height: 22vh;
+    min-height: 22vh;
+    min-width: 120px;
+    font-size: .8em;
+`
+
 export const Form = styled.form`
     display: flex;
     flex-direction: column;

@@ -10,7 +10,7 @@ export const Login = props => {
 
     const submithandler = e => {
         e.preventDefault()
-        console.log(username, password)
+        postAuth(username, password)
     }
 
     const changeUsername = e => {
@@ -24,7 +24,6 @@ export const Login = props => {
     }
 
     const createUser = e => {
-        console.log(username, password)
         postUser(username, password)
     }
 
@@ -47,6 +46,35 @@ export const Login = props => {
             if (r.error) {
                 setError(r.error)
             } else {
+                console.log(r)
+                setUser(r.user)
+            }
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        })
+    }
+
+    const postAuth = (username, password) => {
+        fetch(`http://localhost:3000/api/v1/login`, {
+            method: `POST`,
+            headers: {
+                "Content-Type": `application/json`,
+                Accept: `application/json`
+            },
+            body: JSON.stringify({
+                user: {
+                    username: username,
+                    password: password
+                }
+            })
+        })
+        .then(r => r.json())
+        .then(r => {
+            if (r.error) {
+                setError(r.error)
+            } else {
+                console.log(r)
                 setUser(r.user)
             }
         })

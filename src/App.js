@@ -10,7 +10,7 @@ function App() {
   return (
     <Provider value={{user, setUser}}>
       <div className="App">
-        <Login/>
+        <LoginContainer/>
       </div>
     </Provider>
   );

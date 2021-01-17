@@ -4,22 +4,27 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* border: 1px solid black; */
+    align-items: center;
+    /* justify-content: center; */
+    border: 1px solid lightblue;
     border-radius: 3px;
     box-sizing: content-box;
-    width: 10%;
+    width: 16vw;
+    height: 22vh;
+    min-height: 22vh;
     min-width: 120px;
 `
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: 3px solid lightblue;
+    /* border: 1px solid black; */
     border-radius: 3px;
     box-sizing: content-box;
     padding: .4em;
     font-size: .8em;
     width: 10%;
+    height: 10%;
     min-width: 120px;
 `
 export const Button = styled.button`

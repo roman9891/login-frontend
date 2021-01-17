@@ -5,7 +5,6 @@ export const Container = styled.div`
     flex-direction: column;
     text-align: center;
     align-items: center;
-    /* justify-content: center; */
     border: 1px solid lightblue;
     border-radius: 3px;
     box-sizing: content-box;
@@ -20,8 +19,6 @@ export const Container2 = styled.div`
     text-align: center;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid lightblue; */
-    /* border-radius: 3px; */
     box-sizing: content-box;
     width: 16vw;
     height: 22vh;
@@ -34,7 +31,6 @@ export const Form = styled.form`
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* border: 1px solid black; */
     border-radius: 3px;
     box-sizing: content-box;
     padding: .4em;

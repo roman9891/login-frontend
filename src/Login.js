@@ -59,13 +59,10 @@ export const Login = props => {
             <Form onSubmit={submithandler}>
                 <label>Username:</label>
                 <input onChange={changeUsername} value={username}></input>
-                {/* <br/> */}
                 <label>Password:</label>
                 <input type="password" onChange={changePassword} value={password}></input>
-                {/* <br/> */}
                 <Button primary type="submit">Login</Button>
                 <Button primary onClick={createUser}>Create</Button>
-                {/* <p>{error}</p> */}
             </Form>
     )
 }

@@ -1,7 +1,8 @@
 import {LoginContainer} from './LoginContainer'
 import {Provider} from './appContext'
 import { useState } from 'react';
-// import './App.css';
+import {Login} from './Login'
+import './App.css';
 
 function App() {
   const [user, setUser] = useState(null)
@@ -9,7 +10,7 @@ function App() {
   return (
     <Provider value={{user, setUser}}>
       <div className="App">
-        <LoginContainer/>
+        <Login/>
       </div>
     </Provider>
   );

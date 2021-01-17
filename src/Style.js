@@ -19,17 +19,16 @@ export const Form = styled.form`
     box-sizing: content-box;
     padding: .4em;
     font-size: .8em;
-    /* background-color: lightgray; */
+    width: 10%;
+    min-width: 120px;
 `
 export const Button = styled.button`
-  /* Adapt the colors based on primary prop */
-  background: ${props => props.primary ? "palevioletred" : "white"};
-  color: ${props => props.primary ? "white" : "palevioletred"};
-
+  background: ${props => props.primary ? "#299637" : "white"};
+  color: ${props => props.primary ? "white" : "#299637"};
   font-size: 1em;
   padding: 0.25em 1em;
-  border: 2px solid palevioletred;
+  border: 2px solid #299637;
   border-radius: 3px;
   margin: .1em;
   cursor: pointer;
-`;
+`
